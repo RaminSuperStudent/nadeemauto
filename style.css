@@ -1,0 +1,112 @@
+/* Nadeem Anwar Bike Repairing Shop — custom styles */
+:root {
+  --ink: #111315;
+  --muted: #777d82;
+  --paper: #f4f3ef;
+  --accent: #f5a623;
+  --line: #e3e1db;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 82px; }
+body { margin: 0; color: var(--ink); font-family: 'Inter', sans-serif; }
+.navbar { background: rgba(13, 15, 17, .96); padding: 15px 0; }
+.navbar-brand { color: #fff; font-weight: 800; letter-spacing: 1.5px; font-size: 1rem; display: inline-flex; align-items: center; gap: 9px; }
+.brand-mark { display: inline-grid; place-items: center; width: 34px; height: 34px; background: var(--accent); color: #111; font-size: .75rem; border-radius: 50%; }
+.brand-light { color: #aeb3b7; font-weight: 500; }
+.nav-link { color: #d6d8da !important; font-size: .85rem; }
+.nav-link:hover { color: var(--accent) !important; }
+.btn-accent { background: var(--accent); color: #171717; border: 1px solid var(--accent); font-weight: 700; border-radius: 3px; }
+.btn-accent:hover { background: #ffc04c; border-color: #ffc04c; color: #111; }
+.hero { min-height: 690px; position: relative; display: flex; align-items: center; color: white; overflow: hidden; background: #171a1c url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=2000&q=90') center 55%/cover no-repeat; }
+.hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8,10,12,.94) 0%, rgba(8,10,12,.77) 46%, rgba(8,10,12,.16) 100%); }
+.hero-content { position: relative; z-index: 1; padding-top: 90px; }
+.eyebrow { color: var(--accent); font-size: .72rem; font-weight: 800; letter-spacing: 2px; display: flex; align-items: center; gap: 10px; }
+.eyebrow span { display: inline-block; width: 25px; height: 2px; background: var(--accent); }
+.eyebrow.dark { color: #9b6811; }
+.hero h1, .section-title, .cta-band h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(3.7rem, 8vw, 6.7rem); line-height: .91; letter-spacing: 1px; font-weight: 800; margin: 22px 0; }
+.hero h1 em, .section-title em, .cta-band h2 em { color: var(--accent); font-style: normal; }
+.hero-copy { max-width: 480px; color: #d0d2d3; font-size: 1.05rem; line-height: 1.8; }
+.btn-lg { padding: 13px 22px; font-size: .9rem; border-radius: 3px; font-weight: 700; }
+.hero-note { margin-top: 55px; border-left: 2px solid var(--accent); padding-left: 15px; display: flex; flex-direction: column; }
+.hero-note strong { font-family: 'Barlow Condensed', sans-serif; font-size: 1.6rem; }
+.hero-note span { color: #b7bdc1; font-size: .78rem; }
+.hero-bottom { position: absolute; bottom: 0; left: 0; right: 0; padding: 17px 4%; display: flex; justify-content: space-between; color: #c4c6c8; font-size: .65rem; letter-spacing: 2px; border-top: 1px solid rgba(255,255,255,.18); }
+.stats-strip { background: var(--accent); padding: 27px 0; }
+.stat { display: flex; flex-direction: column; }
+.stat strong { font-family: 'Barlow Condensed', sans-serif; font-size: 2.5rem; line-height: 1; }
+.stat span { font-size: .7rem; font-weight: 700; letter-spacing: .7px; margin-top: 6px; }
+.section-pad { padding: 100px 0; }
+.about-photo { position: relative; padding: 0 28px 28px 0; }
+.about-photo:before { content: ''; position: absolute; right: 0; bottom: 0; width: 72%; height: 75%; border: 3px solid var(--accent); }
+.about-photo img { width: 100%; height: 450px; object-fit: cover; position: relative; display: block; }
+.photo-label { position: absolute; left: 0; bottom: 48px; background: var(--accent); color: #111; padding: 15px 22px; display: flex; flex-direction: column; }
+.photo-label span { font-size: .62rem; letter-spacing: 2px; }
+.photo-label strong { font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; line-height: 1.05; }
+.section-title { font-size: clamp(2.8rem, 5vw, 4.4rem); margin: 16px 0; }
+.section-title em { color: #b77912; }
+.lead-copy { font-size: 1.15rem; font-weight: 700; margin-top: 25px; }
+.body-copy { color: #666d72; line-height: 1.9; font-size: .94rem; }
+.owner-details { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 28px; }
+.owner-details div { border-top: 1px solid var(--line); padding-top: 12px; display: flex; flex-direction: column; gap: 5px; }
+.owner-details span, .contact-line div span { color: #969b9e; font-size: .65rem; font-weight: 800; letter-spacing: 1.5px; }
+.owner-details strong { font-size: .9rem; }
+.services-section { background: #15181a; color: #fff; }
+.section-heading { max-width: 680px; margin: auto; }
+.section-heading p:last-child { color: #aab0b4; font-size: .9rem; }
+.services-section .section-title { color: white; }
+.service-card { height: 100%; min-height: 255px; position: relative; padding: 30px; background: #202427; border: 1px solid #303639; transition: transform .25s, border-color .25s; }
+.service-card:hover { transform: translateY(-6px); border-color: var(--accent); }
+.service-card.featured { background: var(--accent); color: #111; }
+.service-icon { font-size: 2rem; margin-bottom: 25px; }
+.card-number { position: absolute; top: 30px; right: 30px; color: #858d91; font-size: .75rem; }
+.featured .card-number { color: #6f4a0c; }
+.service-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.8rem; font-weight: 700; }
+.service-card p { color: #aeb5b8; font-size: .84rem; line-height: 1.8; margin: 0; }
+.service-card.featured p { color: #3d321f; }
+.bikes-section { background: var(--paper); }
+.bike-note { color: #72797d; font-size: .82rem; max-width: 250px; }
+.bike-card { background: #fff; height: 100%; border: 1px solid #e9e7e1; transition: transform .25s, box-shadow .25s; }
+.bike-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,.08); }
+.bike-visual { min-height: 160px; display: grid; place-items: center; font-size: 4rem; color: #222; background: #e9e7e1; }
+.bike-two { background: #e7e9e8; }.bike-three { background: #e7e5e0; }.bike-four { background: #e4e8e9; }
+.bike-info { padding: 18px; }
+.bike-info span { color: #a36d13; font-size: .63rem; letter-spacing: 1.5px; font-weight: 800; }
+.bike-info h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.55rem; font-weight: 700; margin: 4px 0; }
+.bike-info p { color: #858b8e; font-size: .75rem; margin: 0; }
+.availability-note { color: #81878a; font-size: .72rem; margin-top: 20px; }
+.cta-band { padding: 58px 0; background: #171a1c; color: #fff; }
+.cta-band h2 { font-size: clamp(2.3rem, 4vw, 3.7rem); margin: 10px 0 0; }
+.contact-section { background: #fff; }
+.contact-panel { background: var(--paper); padding: 30px; }
+.contact-line { display: flex; align-items: flex-start; gap: 17px; padding: 14px 0; border-bottom: 1px solid #dfddd7; }
+.contact-icon { width: 38px; height: 38px; flex: 0 0 38px; display: grid; place-items: center; background: var(--accent); border-radius: 50%; font-size: 1.1rem; }
+.contact-line div { display: flex; flex-direction: column; gap: 4px; }
+.contact-line strong { font-size: 1rem; }
+.contact-line small { color: #81878a; }
+.contact-hint { font-size: .7rem; color: #81878a; text-align: center; margin: 13px 0 0; }
+.footer { background: #101214; padding: 24px 0; color: #fff; }
+.footer p { color: #92999d; font-size: .7rem; margin: 0; }
+.back-top { color: var(--accent); text-decoration: none; font-size: .68rem; letter-spacing: 1px; font-weight: 700; }
+@media (max-width: 767px) {
+  .hero { min-height: 650px; background-position: 62% center; }
+  .hero-shade { background: linear-gradient(90deg, rgba(8,10,12,.94), rgba(8,10,12,.57)); }
+  .hero-content { padding-top: 100px; }
+  .hero h1 { font-size: 4.2rem; }
+  .section-pad { padding: 70px 0; }
+  .about-photo img { height: 330px; }
+  .hero-bottom { font-size: .55rem; }
+  .footer { text-align: center; }
+  .footer .container { justify-content: center !important; }
+}
+
+
+/* Photo cards and customer visit banner */
+.bike-photo { width: 100%; height: 175px; display: block; object-fit: cover; background: #dedbd3; }
+.visit-banner { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 28px; background: #171a1c; color: #fff; border-left: 4px solid var(--accent); }
+.visit-banner span { display: block; color: var(--accent); font-size: .65rem; letter-spacing: 1.7px; font-weight: 800; margin-bottom: 5px; }
+.visit-banner strong { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 1.8rem; }
+.visit-banner p { margin: 4px 0 0; color: #b9c0c3; font-size: .82rem; }
+@media (max-width: 575px) {
+  .bike-photo { height: 125px; }
+  .visit-banner { align-items: flex-start; flex-direction: column; padding: 20px; }
+}
